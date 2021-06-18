@@ -1,317 +1,60 @@
-<html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Codeply">
-    <title>Codeply simple HTML/CSS/JS preview</title>
-    <base target="_self"> 
-  
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
-    
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  
-    <style>.container {
-    max-width: 960px;
-  }
-  
-  .lh-condensed { line-height: 1.25; }</style>
-  </head>
-  <body class="bg-light">
-    <div class="container">
-      <div class="py-5 text-center">
-          <img class="d-block mx-auto mb-4" src="logokjs1.jpg" alt="Krist Jayanti School, Bariya" width="85" height="80" style="border-radius: 100px;">
-          <h2>Checkout form</h2>
-          <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-      </div>
-      <div class="row">
-          <div class="col-md-4 order-md-2 mb-4">
-              <h4 class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="text-muted">Your cart</span>
-                  <span class="badge badge-secondary badge-pill">1</span>
-              </h4>
-              <ul class="list-group mb-3 sticky-top">
-                  <li class="list-group-item d-flex justify-content-between lh-condensed">
-                      <div>
-                          <h6 class="my-0">Product name</h6>
-                          <small class="text-muted"></small>
-                      </div>
-                      <span class="text-muted">$12</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-condensed">
-                      <div>
-                          <h6 class="my-0">Second product</h6>
-                          <small class="text-muted">Brief description</small>
-                      </div>
-                      <span class="text-muted">$8</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-condensed">
-                      <div>
-                          <h6 class="my-0">Third item</h6>
-                          <small class="text-muted">Brief description</small>
-                      </div>
-                      <span class="text-muted">$5</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between bg-light">
-                      <div class="text-success">
-                          <h6 class="my-0">Promo code</h6>
-                          <small>EXAMPLECODE</small>
-                      </div>
-                      <span class="text-success">-$5</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between">
-                      <span>Total (USD)</span>
-                      <strong>$20</strong>
-                  </li>
-              </ul>
-              <form class="card p-2">
-                  <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Promo code">
-                      <div class="input-group-append">
-                          <button type="submit" class="btn btn-secondary">Redeem</button>
-                      </div>
-                  </div>
-              </form>
-          </div>
-          <div class="col-md-8 order-md-1">
-              <h4 class="mb-3">Billing address</h4>
-              <form class="needs-validation" novalidate="">
-                  <div class="row">
-                      <div class="col-md-6 mb-3">
-                          <label for="firstName">First name</label>
-                          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                          <div class="invalid-feedback"> Valid first name is required. </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                          <label for="lastName">Last name</label>
-                          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                          <div class="invalid-feedback"> Valid last name is required. </div>
-                      </div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="username">Username</label>
-                      <div class="input-group">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">@</span>
-                          </div>
-                          <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                          <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
-                      </div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                      <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="address">Address</label>
-                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                      <div class="invalid-feedback"> Please enter your shipping address. </div>
-                  </div>
-                  <div class="mb-3">
-                      <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                  </div>
-                  <div class="row">
-                      <div class="col-md-5 mb-3">
-                          <label for="country">Country</label>
-                          <select class="custom-select d-block w-100" id="country" required="">
-                              <option value="">Choose...</option>
-                              <option>India</option>
-                          </select>
-                          <div class="invalid-feedback"> Please select a valid country. </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                          <label for="state">State</label>
-                          <select class="custom-select d-block w-100" id="state" required="">
-                              <option value="">Choose...</option>
-                              <option>Uttar Pradesh</option>
-                          </select>
-                          <div class="invalid-feedback"> Please provide a valid state. </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                          <label for="zip">Zip</label>
-                          <input type="text" class="form-control" id="zip" placeholder="" required="">
-                          <div class="invalid-feedback"> Zip code required. </div>
-                      </div>
-                  </div>
-                  <hr class="mb-4">
-                  <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="same-address">
-                      <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="save-info">
-                      <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                  </div>
-                  <hr class="mb-4">
-                  <h4 class="mb-3">Payment</h4>
-                  <div class="d-block my-3">
-                      <div class="custom-control custom-radio">
-                          <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                          <label class="custom-control-label" for="credit">Credit card</label>
-                      </div>
-                      <div class="custom-control custom-radio">
-                          <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="debit">Debit card</label>
-                      </div>
-                      <div class="custom-control custom-radio">
-                          <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="paypal">PayPal</label>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-6 mb-3">
-                          <label for="cc-name">Name on card</label>
-                          <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                          <small class="text-muted">Full name as displayed on card</small>
-                          <div class="invalid-feedback"> Name on card is required </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                          <label for="cc-number">Credit card number</label>
-                          <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                          <div class="invalid-feedback"> Credit card number is required </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-3 mb-3">
-                          <label for="cc-expiration">Expiration</label>
-                          <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                          <div class="invalid-feedback"> Expiration date required </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                          <label for="cc-cvv">CVV</label>
-                          <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                          <div class="invalid-feedback"> Security code required </div>
-                      </div>
-                  </div>
-                  <hr class="mb-4">
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-              </form>
-          </div>
-      </div>
-      <footer class="my-5 pt-5 text-muted text-center text-small">
-          <p class="mb-1">© 2021-2022 Krist Jayanti School, Bariya</p>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Privacy</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Support</a></li>
-          </ul>
-      </footer>
-  </div>
-  
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  
-    <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function () {
-    'use strict'
-  
-    window.addEventListener('load', function () {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation')
-  
-      // Loop over them and prevent submission
-      Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-          form.classList.add('was-validated')
-        }, false)
-      })
-    }, false)
-  }())
-    </script>
-    <script>
-      // prevent navigation
-      document.addEventListener("DOMContentLoaded", function() {
-        var links = document.getElementsByTagName("A");
-        for(var i=0; i < links.length; i++) {
-          links[i].addEventListener("click", function(e) {
-            var href = this.getAttribute("href")
-  
-            if (!href) {
-              return
-            }
-  
-            if (href === '#') {
-              // hash only ('#')
-              console.debug('Internal nav allowed by Codeply');
-              e.preventDefault()
-            }
-            else if (this.hash) {
-              // hash with tag ('#foo')
-              var element = null
-              try {
-                element = document.querySelector(this.hash)
-              }
-              catch(e) {
-                console.debug('Codeply internal nav querySelector failed')
-              }
-              if (element) {
-                // scroll to anchor
-                e.preventDefault();
-                const top = element.getBoundingClientRect().top + window.pageYOffset
-                //window.scrollTo({top, behavior: 'smooth'})
-                window.scrollTo(0,top)
-                console.debug('Internal anchor controlled by Codeply to element:' + this.hash)
-              }
-              else {
-                // allow javascript routing
-                console.debug('Internal nav route allowed by Codeply');
-              }
-            }
-            else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
-              // special multi-page routing
-              console.debug('Special internal page route: ' + href)
-  
-              var l = href.replace('/p/','/v/')
-  
-              // reroute
-              e.preventDefault()
-              var newLoc = l + '?from=internal'
-              console.debug('Internal view will reroute to ' + newLoc) 
-              location.href = newLoc
-            }
-            else if (href.indexOf("./")===0) {
-              // special multi-page routing
-              console.debug('Special internal ./ route: ' + href)
-  
-              var u = parent.document.URL.split("/")
-              var pn = href.split("/")[1]
-              var plyId = u[u.length-1]
-  
-              if (plyId.indexOf('?from')>-1) {
-                // already rerouted this
-                console.debug('already rerouted')
-                plyId = u[u.length-2]
-              }
-  
-              var l = plyId + '/' + pn
-              
-              console.debug(u)
-              console.debug(pn)
-              console.debug('l',l)
-  
-              // reroute
-              e.preventDefault()
-              var newLoc = '/v/' + l + '?from=internal'
-              console.debug('Internal page will reroute to ' + newLoc) 
-              location.href = newLoc
-            }
-            else {
-              // no external links
-              e.preventDefault();
-              console.debug('External nav prevented by Codeply');
-            }
-            //return false;
-          })
+<html>
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <style>
+        img {
+            filter:
+                sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7)
         }
-      }, null);
-    </script>
-  
-  
-  </body></html>
+    </style>
+</head>
+
+<body>
+    <div class="frame-root">
+        <div class="frame-content">
+            <section class="text-gray-600 body-font">
+                <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center"><img
+                        class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-center rounded" alt="Qr Code" src="/kjs/QR4pay.png">
+                    <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Scan the QR Code and enter the specified amount (₹6,400) to pay!</h1>
+                        <p class="mb-8 leading-relaxed">Make sure you enter the correctamount. And if accidently you entered more amount don't wory in that case we'll verify whether it was you or not and we promise you to return you money.</p>
+                        <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Don't have Patym. Get Patym app from below.</p>
+                        <div class="flex"><button
+                                class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                                    </path>
+                                </svg><span class="ml-4 flex items-start flex-col leading-none"><span
+                                        class="text-xs text-gray-600 mb-1"><a href="https://play.google.com/store/apps/details?id=net.one97.paytm">GET IT ON</a></span><span
+                                        class="title-font font-medium"><a href="https://play.google.com/store/apps/details?id=net.one97.paytm">Google Play</a></span></span></button><button
+                                class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center ml-4 hover:bg-gray-200 focus:outline-none"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                                    viewBox="0 0 305 305">
+                                    <path
+                                        d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z">
+                                    </path>
+                                    <path
+                                        d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z">
+                                    </path>
+                                </svg><span class="ml-4 flex items-start flex-col leading-none"><span
+                                        class="text-xs text-gray-600 mb-1"><a href="https://apps.apple.com/in/app/paytm-upi-payments-recharge/id473941634">Download on the</a></span><span
+                                        class="title-font font-medium"><a href="https://apps.apple.com/in/app/paytm-upi-payments-recharge/id473941634">App Store</a></span></span></button></div>
+                                
+                      <a class="btn btn-success" type="button" href="/kjs/index.html" role="button">
+                        <u>Return Home</u>
+                      </a>
+                       </div>
+                    </div>
+                     <footer class="my-5 pt-5 text-muted text-center text-small">
+                     <p class="mb-1">© 2021-2022 Krist Jayanti School, Bariya</p>
+                     </footer>
+                    </div>
+              </div>
+          </section>
+        </div>
+    </div>   
+</body>
+</html>
