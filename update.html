@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="tailwind.css" rel="stylesheet">
+    <!--Bootstrap cdn below-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script type="module">
+        import { Toast } from 'bootstrap.esm.min.js'
+      
+        Array.from(document.querySelectorAll('.toast'))
+          .forEach(toastNode => new Toast(toastNode))
+    </script>
+    <title>Updates</title>
+</head>
+<body onload="myfunction()">
+  <div id="loader"></div>
+  
+    <!--- Header (Upper portion of the webpage that contains link to other pages.)-->
+ <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" style="color: black; text-decoration: none;" href="index.html">
+        <img src="https://kristjayantischool.com/assets/images/logo-96x89.jpg" fill="none" stroke="currentColor" stroke-linecap="none" stroke-linejoin="round" stroke-width="2" class="w-17 h-17 text-white p-2 bg-grey-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Krist Jayanti School</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="index.html" style="color: black; text-decoration: none;">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html" style="color: black; text-decoration: none;">About</a>
+        <a class="mr-5 hover:text-gray-900" href="admission.html" style="color: black; text-decoration: none;">Admission</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html" style="color: black; text-decoration: none;">Contact Us</a>
+        <a class="mr-5 hover:text-gray-900" href="update.html" style="color: black; text-decoration: none;"><u><b>Updates</b></u></a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Enroll Now
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <hr>
+
+
+  <!-- modal section ended-->
+    <!---Alert message -->
+    <div class="alert alert-warning" role="alert">
+        You cannot access Updates section now. It is under maintainance. Please make sure to come again later or subscribe to our newslater for upcomming updates. You will be notified at your mail address.<br><center>Thank You.</center> 
+        <br>
+
+        <!--Return home button-->                
+        <div class="mx-2">
+          <center><button class="btn btn-secondary"><a href="index.html" style="color:violet; text-decoration: none;">Go Back to Home Page.</a></button><br>
+            <center><button class="btn btn-secondary"><a href="feePayment.html" style="color:violet; text-decoration: none;">Click Here To Submit Fees Online.</a></button>
+           <!-- <center><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Receive Latest Updates From Now.</button></center>-->
+        </div>
+
+        <!--Latest update receiving form for visitors-->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Register your email to get notified!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form class="row g-3" style="padding-left: 75px;" method="POST" action="status.html">
+                      <div class="col-auto">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Continue</button>
+                      </div>
+                    </form>
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        <center><a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Receive Latest Updates From Now</a></center>
+  
+
+    </div>
+    <script>
+      var preload=document.getElementById('loader');
+      function myfunction(){
+            preload.style.display='none';
+            }
+     </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script> 
+</body>
+</html>
+
+<!----
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="animate__animated animate__fadeIn animate__slower animate__delay-5s animate__infinite">An animated element</h1>
+</body>
+</html>-->
