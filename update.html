@@ -37,11 +37,67 @@
     Array.from(document.querySelectorAll('.toast'))
       .forEach(toastNode => new Toast(toastNode))
   </script>
+    <script>
+    $(document).ready(function(){
+    $("#exampleModal").modal('show');
+    });
+  </script>
+  <script type="module">
+    import {
+      Toast
+    } from 'bootstrap.esm.min.js'
+
+    Array.from(document.querySelectorAll('.toast'))
+      .forEach(toastNode => new Toast(toastNode))
+  </script>
   <title>Updates</title>
 </head>
 
 <body onload="myfunction()">
   <div id="loader"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><b>Information Regarding Online Classes</h5></b>
+         <!--<a href="notification.html" style="color: black; text-decoration: none;">
+         <button type="button" class="btn  position-relative">
+            <img src="bell.png" style="width: 25px; height: 25px;">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </button>
+          </a>-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <center><b><u><h4>Instructions for Live Classes in Google Meet.</h4></u></b></center>
+        <br><br>
+        1.	School will reopen after summer break on the 5th July and the Online Classes will be on Google meet  and link will be shared five minutes before the class and all have to be punctual. In case any issue arises you have to inform the concerned teacher within 5 min.
+        <br><br>
+        2.	All students are hereby informed that the name of the child will be removed from the roll if the child doesn't attend classes for 3 days after reopening and 15  consecutive days in the middle without any information.
+        <br><br>
+        3.	In google meet, your Id and name should be mentioned while you enter the class. No other or extra name will  be entertained.
+        <br><br>
+        
+        4.	80% attendance for classes 9 to 12 is compulsory to appear in the final exams. So attend classes regularly. No issues regarding attendance will be entertained at the end of session.
+        <br><br>
+        5.	It is compulsory to attend all the 5  classes then only you will be marked as present. Timing of classes 8:30 to 12:15.
+        <br><br>
+        6.	 The first unit test will begin from 12 July 2021.  Prepare yourself and follow the instructions intimated to  you
+        <br>
+        <br>
+        <center><b>
+         Principal<br>
+         Krist Jayanti school.</b>
+       </center>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal end-->
 
   <!--- Header (Upper portion of the webpage that contains link to other pages.)-->
   <header class="text-gray-600 body-font">
