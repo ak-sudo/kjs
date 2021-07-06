@@ -14,7 +14,7 @@
     <title>Site Under Maintenance!</title>
 
   </head>
-  <body>
+  <body onload="myFunction()">
 
      <audio autoplay="autoplay" id="my_audio" src="/kjs/notify2.mp3" loop="loop"></audio>
   
@@ -41,5 +41,13 @@
      document.getElementById("my_audio").loop = false;}
     </script>
    -->
+
+ <script>
+  var music=document.getElementById('my_audio');
+  function myfunction(){
+       music.play();
+        }
+ </script>
+
 </body>
 </html>
